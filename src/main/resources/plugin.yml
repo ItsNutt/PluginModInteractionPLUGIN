@@ -1,0 +1,5 @@
+name: PluginModInteractionPLUGIN
+version: '${project.version}'
+main: me.itsnutt.pluginmodinteractionplugin.PluginModInteractionPLUGIN
+authors: [ ItsNutt ]
+description: Plugin part of Plugin-Mod Interaction Tutorial
