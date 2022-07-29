@@ -30,7 +30,6 @@ public class CommunicationExecutor {
 
             for (NPCInventoryCommunication NPCInventoryCommunication : npcToDo){
                 p.inventories.openInventory(NPCInventoryCommunication.getPlayerUUID(), NPCInventoryCommunication.getNpcName());
-                System.out.println("Read!");
             }
 
             HashSet<RightClickBlockCommunication> blockToDo = new HashSet<>(intermediary.getBlockCommunications());
@@ -40,7 +39,6 @@ public class CommunicationExecutor {
                 Player player = Bukkit.getPlayer(Comm.getPlayerUUID());
                 Location location = new Location(player.getWorld(), Comm.getBlockPos().getX(), Comm.getBlockPos().getY(), Comm.getBlockPos().getZ());
                 player.sendMessage(ChatColor.DARK_GREEN + "You Just Right Clicked on A " + location.getBlock().getType().name() + "!");
-                System.out.println("Message Sent!");
             }
 
         }
